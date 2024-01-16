@@ -2,10 +2,16 @@
 
 import { Plus } from "lucide-react";
 
+import { ActionTooltip } from "@/components/action-tooltip";
+
 export const NavigationAction = () => {
     return (
         <div>
-      
+      <ActionTooltip
+        side="right"
+        align="center"
+        label="Add a server"
+      >
         <button
 
           className="group flex items-center"
@@ -17,6 +23,7 @@ export const NavigationAction = () => {
             />
           </div>
         </button>
+        </ActionTooltip>
 
     </div>
   )
